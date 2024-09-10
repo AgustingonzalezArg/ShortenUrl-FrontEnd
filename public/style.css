@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 18px; /* 1rem = 18px */
+    }
+}
+
+/* Para pantallas medianas */
+@media (max-width: 1199px) and (min-width: 768px) {
+    html {
+        font-size: 16px; /* 1rem = 16px */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 767px) {
+    html {
+        font-size: 15px; /* 1rem = 14px */
+    }
+}
+
+/* Para pantallas muy pequeñas, como teléfonos */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px; /* 1rem = 12px */
+    }
+}
+
+body {
+    background-color: rgb(79, 128, 172);
+}
+
+header p, h1 {
+    text-align: center;
+    color: aliceblue;
+    margin: 0 5px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px 5px 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+form label {
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+
+.input {
+    margin: 15px 0;
+    border-radius: 15px;
+    border: none;
+    box-shadow: inset 3.5px 3.5px 7px rgb(49, 49, 49);
+    padding: 7px 10px;
+    font-size: .8rem;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+}
+
+.url {
+    min-width: 170px;
+    width: 35%;
+}
+
+.code {
+    min-width: 140px;
+    width: 27%;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.submit {
+    font-size: 1rem;
+    padding: 8px 25px;
+    margin-top: 15px;
+    background-color: aliceblue;
+    color: rgb(79, 128, 172);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color .135s ease-in;
+}
+
+.submit:hover {
+    background-color: rgb(198, 228, 255);
+}
+
+h2, #new-link {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 15px 5px 10px;
+    color: aliceblue;
+}
+
+#new-link {
+    font-size: .8rem;
+    color: aliceblue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+parent:has(#new-link) {
+    background-color: rgb(79, 128, 172);
+    border: 2px solid black;
+}
+
+#views-in-pages {
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 5px;
+}

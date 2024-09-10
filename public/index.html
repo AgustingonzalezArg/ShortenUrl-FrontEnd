@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Acortador de URL</title>
+</head>
+<body>
+    <header>
+        <h1>ACORTADOR DE URL´S</h1>
+        <p>Ingresa tu enlace y obtene uno nuevo recortado</p>
+    </header>
+    <main>
+        <div id="content-form">
+            <form id="form-url">
+                <label for="">Ingresa la URL</label>
+                <input type="text" id="originalUrl" name="originalUrl" class="url input" required>
+                <label for="">Ingresa un codigo para luego ver la cantidad de visitas en el enlace</label>
+                <input type="text" id="val-code" name="val-code" class="code input" required>
+                <input type="submit" id="submit-form" class="submit" value="Acortar">
+            </form>
+        </div>
+        <div>
+            <h2>Nuevo enlace</h2>
+            <p id="new-link"></p>
+        </div>
+        <div>
+            <h2>Ver visitas en tu enlace</h2>
+            <form id="form-short-url">
+                <label for="">Ingresar enlace recortado</label>
+                <input type="text" id="short-url" class="url input" required>
+                <label for="">Ingresar codigo de verificación</label>
+                <input type="text" id="check-code" name="check-code" class="code input" required>
+                <input type="submit" id="submit-form-short" class="submit" value="Ver visitas">
+            </form>
+        </div>
+        <p id="views-in-pages"></p>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>
